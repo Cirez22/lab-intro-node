@@ -47,7 +47,19 @@ class SortedList {
     }
   }
 
-  avg() {}
+  avg() {
+
+    this.empty();
+    return this.sum() / this.length;
+
+
+
+  }
+  empty(){
+    if(this.length == 0){
+      throw new Exception('EmptySortedList')
+    }
+  }
 }
 
 module.exports = SortedList;
